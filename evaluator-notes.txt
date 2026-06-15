@@ -1,0 +1,83 @@
+Evaluator Notes — Medical AI RLHF Evaluation
+
+About Me
+
+Favour Nwatu — BNSc, ESUT College of Medicine expected (2020-2026).
+Pre-licensure Registered Nurse. NMCN licensure examination passed.
+Clinical experience across psychiatric, community health, and
+teaching hospital settings in Nigeria.
+
+
+Key Patterns I Observed Across All 20 Evaluations
+
+Pattern 1 — Dangerous Reassurance
+
+The most common failure in the weaker responses was false reassurance.
+Responses that said "it will pass on its own" or "a small amount is
+probably fine" for serious symptoms were consistently the lower-scoring
+option. In clinical practice, dismissing symptoms like acute confusion,
+chest pain, or a two-day fever in a child can cost a patient their life.
+A good AI medical response should never minimise a potentially serious
+symptom to make the patient feel comfortable.
+
+Pattern 2 — Vagueness vs Clinical Precision
+
+The better responses consistently gave specific numbers, thresholds,
+and named conditions. "Around 100 is normal" for blood glucose is
+less useful than "70 to 99 mg/dL is normal, 100 to 125 is prediabetes."
+Precision is what patients need to make informed decisions about
+seeking care. Vague responses may feel friendly but they fail the
+patient when it matters.
+
+Pattern 3 — Missing the Referral
+
+Several weaker responses gave reasonable information but failed to
+recommend seeing a doctor. A good medical AI response knows its limits.
+On questions about UTIs, hypertension, and dark urine — the response
+should always include a clear directive to seek professional care,
+not leave the patient to self-manage indefinitely.
+
+Pattern 4 — Safety Over Completeness
+
+When I had to choose between a response that was complete but
+potentially unsafe versus one that was shorter but safe, I always
+preferred the safer response. In medical AI evaluation, a response
+that gets 90% of the information right but includes one dangerous
+piece of advice is worse than a response that says less but says
+nothing harmful. Safety scored as the most heavily weighted criterion
+in practice.
+
+Pattern 5 — Nigerian Clinical Context
+
+As a nurse trained and clinically posted in Nigeria, I applied
+local context where relevant — particularly for malaria (Q5),
+typhoid fever (Q15), and sickle cell disease (Q19). Prophylactic
+penicillin for sickle cell children, for example, is a
+life-saving intervention that is highly relevant in the Nigerian
+healthcare context and was absent from the weaker response.
+
+
+Hardest Evaluation Decision
+
+Question 7 — Dark brown urine
+
+This was the most nuanced evaluation. Response A correctly listed
+multiple serious causes but Response B was not entirely wrong —
+dehydration is genuinely the most common cause of dark urine.
+However, the risk of missing a liver or kidney condition outweighs
+the benefit of a simple answer. I scored Response A higher because
+in medical AI, a response that prompts appropriate medical
+evaluation is always safer than one that offers a single common
+explanation and closes the door on further investigation.
+
+
+Overall Observation
+
+Response B was the weaker response in all 20 questions. This was
+intentional in the dataset design — but the pattern reflects a
+real problem in medical AI outputs. Models trained on general text
+often produce responses that sound reasonable and are easy to read,
+but lack the clinical precision and safety awareness that a
+trained healthcare professional would recognise as inadequate.
+This is exactly why human evaluation from clinically trained
+annotators is essential in medical AI development.
